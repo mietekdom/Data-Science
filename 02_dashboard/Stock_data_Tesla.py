@@ -10,7 +10,7 @@ def fetch_financial_data(company='TSLA'):
 
 
 df = fetch_financial_data()
-df = df.reset_index(inplace=True)
+df.reset_index(inplace=True)
 df = df[df.Date > '2019-01-01']
 
 external_stylesheets = ['htttps://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -18,6 +18,7 @@ external_stylesheets = ['htttps://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.layout = html.Div([
+
     html.H4('Notowania spółki Tesla'),
 
     dcc.Graph(
@@ -39,23 +40,6 @@ app.layout = html.Div([
             )
         )
     ),
-    dcc.Graph(
-        figure=go.Figure(
-            data=[
-                go.Bar(
-                    x=df.Date,
-                    y=df.Volume,
-                    name='Wolumen'
-                )
-            ],
-            layout=go.Layout(
-                yaxis_type='log',
-                height=300,
-                title_text='Wykres wolumenu',
-                showlegend=True
-            )
-        )
-    )
 ])
 
 if __name__ == '__main__':
