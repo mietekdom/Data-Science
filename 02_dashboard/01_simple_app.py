@@ -4,7 +4,6 @@ import dash_html_components as html
 import plotly.graph_objects as go
 
 app = dash.Dash(__name__)
-
 app.layout = html.Div(children=[
 
     html.H2(children='Sprzedarz'),
