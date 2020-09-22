@@ -32,7 +32,7 @@ app.layout = html.Div([
                     y=df.Close,
                     mode='lines',
                     fill='tozeroy',
-                    name='Amazon'
+                    name='Tesla'
                 )
             ],
             layout=go.Layout(
