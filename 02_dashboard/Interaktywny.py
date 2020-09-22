@@ -33,8 +33,8 @@ app.layout = html.Div([
 def update_graph(value):
     print(value)
     data_dict = {
-        'PL': [3, 2, 5, 4, 7, 2, 4],
-        'GER': [4, 1, 3, 4, 2, 4, 1]
+        'PL': [3, 2, 5, 4, 7, 2, 4, 6],
+        'GER': [4, 1, 3, 4, 2, 4, 1, 8]
     }
     return {'data': [
         {'y': data_dict[value],
