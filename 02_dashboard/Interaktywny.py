@@ -15,7 +15,7 @@ app.layout = html.Div([
         id='drop-1',
         options=[
             {'label': 'Polska', 'value': 'PL'},
-            {'label': 'Niemcy', 'value': 'GE'}
+            {'label': 'Niemcy', 'value': 'GER'}
         ],
         value='PL'
     ),
@@ -24,6 +24,7 @@ app.layout = html.Div([
         id='graph-1'
     )
 ])
+
 
 @app.callback(
     Output('graph-1', 'figure'),
