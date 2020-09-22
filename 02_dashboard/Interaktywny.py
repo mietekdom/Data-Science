@@ -34,7 +34,8 @@ def update_graph(value):
     print(value)
     data_dict = {
         'PL': [3, 2, 5, 4, 7, 2, 4, 6],
-        'GER': [4, 1, 3, 4, 2, 4, 1, 8]
+        'GER': [4, 1, 3, 4, 2, 4, 1, 8],
+        'US': [2, 4, 6, 1, 4, 5, 6, 7]
     }
     return {'data': [
         {'y': data_dict[value],
