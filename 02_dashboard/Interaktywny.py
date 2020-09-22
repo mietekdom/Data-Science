@@ -15,7 +15,7 @@ app.layout = html.Div([
         id='drop-1',
         options=[
             {'label': 'Polska', 'value': 'PL'},
-            {'label': 'Niemcy', 'value': 'GER'}
+            {'label': 'Niemcy', 'value': 'GE'}
         ],
         value='PL'
     ),
