@@ -23,6 +23,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app.layout = html.Div([
 
     html.H4('Notowania spółki Tesla'),
+    html.H6('NASDAQ: TSLA'),
 
     dcc.Graph(
         figure=go.Figure(
