@@ -39,7 +39,7 @@ app.layout = html.Div([
             layout=go.Layout(
                 yaxis_type='log',
                 height=500,
-                title_text='Wykres ceny',
+                title_text='Wycena akcji',
                 showlegend=True
             )
         )
