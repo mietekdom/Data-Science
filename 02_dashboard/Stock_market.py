@@ -7,6 +7,7 @@ df = pd.read_csv('./data/ten.csv', index_col=0)
 
 df.columns = ['Open', 'High', 'Low', 'Close', 'Volume']
 
+
 # %% dzienna procentowa zmiana procentowa w porównaniu z dniem poprzednim
 
 df['Daily_Change'] = df['Close'].pct_change()
