@@ -20,7 +20,6 @@ df['5_Daily_Change'] = df['Close'].pct_change(periods=5)
 
 df['Close_to_Open'] = df[['Open', 'Close']].pct_change(axis=1).drop('Open', axis=1)
 
-# %%
 
 clean_price = df[['Open', 'High', 'Low', 'Close']]
 
