@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 # %% importing data
 df = pd.read_csv('./data/ten.csv', index_col=0)
 
+
 df.columns = ['Open', 'High', 'Low', 'Close', 'Volume']
 
 
