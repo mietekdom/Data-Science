@@ -17,7 +17,7 @@ df['Daily_Change'] = df['Close'].pct_change()
 
 df['5_Daily_Change'] = df['Close'].pct_change(periods=5)
 
-# %% zmiana procentowa otwarcia i zmakiecia (sesja giełdowa z dnia)
+# %% zmiana procentowa otwarcia i zmakniecia (sesja giełdowa z dnia)
 
 df['Close_to_Open'] = df[['Open', 'Close']].pct_change(axis=1).drop('Open', axis=1)
 
